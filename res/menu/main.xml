@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:icon="@drawable/content_new"
+        android:title="New"/>
+    <item 
+        android:id="@+id/action_cloud"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:icon="@drawable/collections_cloud"
+        android:title="Cloud"/>
+    <item 
+        android:id="@+id/action_info"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:icon="@drawable/collections_view_as_list"
+        android:title="Report"/>
+    
+</menu>
+

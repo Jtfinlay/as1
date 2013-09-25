@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0FFFF">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <EditText
+            android:id="@+id/Notes_Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:hint="Subject"
+            android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/Notes_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/Notes_Subject"
+            android:editable="false"
+            android:onClick="showDateClickerDialog"
+            android:focusable="false"
+            android:textSize="18sp"
+            android:text="Date"
+            android:minWidth="10sp"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/Notes_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Notes_Date"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:hint="Content"
+            android:scrollbars="vertical"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

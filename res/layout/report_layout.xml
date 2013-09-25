@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Report_CharSum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:maxLines="1"
+        android:text="Total characters: Fuck you."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Report_WordSum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:maxLines="1"
+        android:text="Total words: Fuck you."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Report_LogSum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:maxLines="1"
+        android:text="Total logs: Fuck you."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Report_CommonWords"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="100 common words: Fuck you."
+        android:textSize="18sp" />
+
+</LinearLayout>
