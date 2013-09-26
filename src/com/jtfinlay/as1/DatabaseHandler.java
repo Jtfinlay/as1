@@ -2,6 +2,12 @@
  * Jtfinlay_Notepad#. Note-taking application for Android.
  * Copyright (C) 2013 James Finlay
  * 
+ * CommonMapComparator code originates in part from Muse's comment at
+ * 		http://stackoverflow.com/questions/8119366/sorting-hashmap-by-values
+ * 
+ * Code modeled after tutorial provided by Lars Vogel at
+ * 		http://www.vogella.com/articles/AndroidSQLite/article.html
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -230,9 +236,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	}
 	/*
 	 * Sorts Map<String, Integer>. Useful for finding most commonly used words.
+	 * Function is a modified version of Muse's reply at http://stackoverflow.com/questions/8119366/sorting-hashmap-by-values
 	 */
 	public static Map<String, Integer> CommonMapComparator(Map<String, Integer> unsortMap, final boolean order) {
-		// http://stackoverflow.com/questions/8119366/sorting-hashmap-by-values
 		List<Entry<String, Integer>> list = new LinkedList<Entry<String, Integer>>(unsortMap.entrySet());
 		
 		Collections.sort(list, new Comparator<Entry<String, Integer>>()
