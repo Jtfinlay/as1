@@ -4,6 +4,9 @@ In addition, this application provides statistics regarding the entries for the 
 
 The statistics page and word cloud can be accessed via the Actionbar, and use only the Content text (ignores the Subject). The log list is sorted by the creation date, rather than the modified Date value.
 
+
+
+
 AUTHORS
 
 ========
