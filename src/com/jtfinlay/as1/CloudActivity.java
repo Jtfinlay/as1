@@ -58,14 +58,16 @@ public class CloudActivity extends Activity {
 		
 		String words = "";
 		int counter = 0;
-		Map<String, Integer> commonWords = DatabaseHandler.CommonMapComparator(DatabaseHandler.getCommonWords(rows), false);
+		Map<String, Integer> commonWords = DatabaseHandler.getCommonWords(rows);
+				
 		float max_count = Collections.max(commonWords.values());
 		float min_count = Collections.min(commonWords.values());
 		
 		Spannable span;
 		float fontSize;
 		for (String word : commonWords.keySet()) {
-			if (++counter >= 100) break;
+			//if (++counter >= 100) break;
+			if (commonWords.get(word) == 1) continue;
 			int start = _textCloud.getText().length();
 			_textCloud.append(word + " ");
 			int end = _textCloud.getText().length()-1;

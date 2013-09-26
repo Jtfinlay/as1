@@ -7,8 +7,7 @@ Subject is required for every note.
 
 In addition, this application provides statistics regarding the entries for
 the user, such as total characters, total words, total logs, and 100 common
-words. To make life prettier, the top 100 words can also be viewed as a word
-cloud.
+words. To make life prettier, all words that are used more than once can be combined into a fancy word cloud.
 
 The statistics page and word cloud can be accessed via the Actionbar, and use
 only the Content text (ignores the Subject). The log list is sorted by the
